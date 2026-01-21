@@ -6,6 +6,7 @@
     <title>About Me | IT Support Portfolio</title>
 </head>
 <body>
+    <div id="header-placeholder"></div>
     <div class="container">
         <a href="../index.html" class="back-btn">← Back to Home</a>
         
@@ -16,5 +17,12 @@
             <p>I am passionate about precision—whether it's troubleshooting high-availability servers or capturing the stars through astrophotography.</p>
         </div>
     </div>
+        <script>
+        fetch(window.location.pathname.includes('pages/') ? '../header.html' : 'header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
