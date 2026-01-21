@@ -10,6 +10,7 @@
     </style>
 </head>
 <body>
+    <div id="header-placeholder"></div>
     <div class="container">
         <a href="../index.html" class="back-btn">← Back to Home</a>
         <div class="card">
@@ -23,11 +24,19 @@
     </div>
 
     <script>
+        // Logika Game Roulette
         function playGame() {
             const results = ["WIN", "LOSE", "TRY AGAIN", "JACKPOT"];
             const random = Math.floor(Math.random() * results.length);
             document.getElementById('result').innerText = results[random];
         }
+    
+        // Logika Pemanggil Header Otomatis
+        fetch(window.location.pathname.includes('pages/') ? '../header.html' : 'header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header-placeholder').innerHTML = data;
+            });
     </script>
 </body>
 </html>
