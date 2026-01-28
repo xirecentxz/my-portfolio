@@ -3,82 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adhimukti Yusuf | IT Support Specialist</title>
+    <title>Adhimukti Yusuf | Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container fade-in">
-        <header class="main-card profile-card">
-            <div class="profile-header">
-                <img src="assets/profile.jpeg" alt="Profile" class="profile-img">
-                <div class="profile-text">
-                    <span class="badge">IT Support Specialist</span>
-                    <h1>I'm Adhimukti Yusuf</h1>
-                    <p>Dedicated IT Professional with extensive experience in maintaining robust system architectures. Expert in end-to-end infrastructure management and rapid hardware troubleshooting. Proven track record in ensuring maximum system uptime and providing comprehensive support in mission-critical, 24/7 high-pressure environments.</p>
-                </div>
-            </div>
-        </header>
 
-        <div class="bento-grid">
-            <div class="bento-card infrastructure">
-                <div class="card-header">
-                    <span class="icon">🖥️</span>
-                    <h3>Infrastructure</h3>
-                </div>
-                <div class="pill-container">
-                    <span class="pill">Server Admin</span>
-                    <span class="pill">Networking</span>
-                    <span class="pill">IBM System x3650 M4</span>
-                    <span class="pill">L1/L2 Support</span>
+    <div class="container">
+        <section class="profile-header">
+            <img src="assets/profile.jpeg" alt="Adhimukti Yusuf" class="profile-img">
+            <h1>I'm Adhimukti Yusuf</h1>
+            <p class="summary">
+                Dedicated IT Professional with extensive experience in maintaining robust system architectures. Expert in end-to-end infrastructure management and rapid hardware troubleshooting. Proven track record in ensuring maximum system uptime and providing comprehensive support in mission-critical, 24/7 high-pressure environments.
+            </p>
+        </section>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>🖥️ Infrastructure</h3>
+                <div class="tags">
+                    <span class="tag">Server Admin & Networking</span>
+                    <span class="tag">Enterprise Server Management</span>
+                    <span class="tag">Technical Support & Incident Management</span>
+                    <span class="tag">Remote Operations & Support</span>
                 </div>
             </div>
 
-            <div class="bento-card development">
-                <div class="card-header">
-                    <span class="icon">💻</span>
-                    <h3>Development</h3>
+            <div class="skill-card">
+                <h3>💻 Development</h3>
+                <div class="tags">
+                    <span class="tag">JavaScript & HTML/CSS</span>
+                    <span class="tag">Python (Data Analysis with Pandas)</span>
+                    <span class="tag">Google Apps Script (Automation)</span>
                 </div>
-                <div class="pill-container">
-                    <span class="pill">JavaScript</span>
-                    <span class="pill">Python/Pandas</span>
-                    <span class="pill">Google Apps Script</span>
-                    <span class="pill">HTML/CSS</span>
+            </div>
+
+            <div class="skill-card">
+                <h3>🛠️ Tools & Productivity</h3>
+                <div class="tags">
+                    <span class="tag">Microsoft Excel: Pivot & Reporting</span>
+                    <span class="tag">Technical Documentation</span>
+                    <span class="tag">AI-Assisted Problem Solving</span>
                 </div>
             </div>
         </div>
 
         <section class="projects-section">
-            <h2 class="section-title">Selected Projects</h2>
-            <div class="projects-list">
-                <div class="project-item">
-                    <div class="project-info">
-                        <span class="tag">Automation</span>
-                        <h3>Inventory Discrepancy Reporter</h3>
-                        <p>Automated reconciliation system for stock discrepancies using Pandas.</p>
-                    </div>
-                    <a href="#" class="view-btn">Case Study →</a>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <span class="tag">Web App</span>
-                        <h3>Product Catalog System</h3>
-                        <p>Dynamic web catalog using Google Sheets for real-time sales team updates.</p>
-                    </div>
-                    <a href="#" class="view-btn">Explore App →</a>
-                </div>
-
-                <div class="project-item">
-                    <div class="project-info">
-                        <span class="tag">JavaScript Game</span>
-                        <h3>Modern Roulette Game</h3>
-                        <p>Logic-based decision maker with precise radian-offset synchronization.</p>
-                    </div>
-                    <a href="../roulette-web-game/index.html" class="view-btn">Play Game →</a>
-                </div>
+            <h2 style="font-weight: 800; margin-bottom: 10px;">Selected Projects</h2>
+            <div class="project-card">
+                <span class="project-badge">Automation</span>
+                <h3 style="margin: 5px 0;">Inventory Discrepancy Reporter</h3>
+                <p style="color: var(--text-muted); font-size: 0.95rem;">Automated reconciliation system for stock discrepancies using Python and Pandas.</p>
             </div>
         </section>
     </div>
+
 </body>
 </html>
