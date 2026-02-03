@@ -8,6 +8,17 @@
 </head>
 <body>
 
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#" class="nav-logo">AY.</a>
+        <div class="nav-links">
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="https://github.com/xirecentxz" target="_blank" class="nav-cta">GitHub</a>
+        </div>
+    </div>
+</nav>
+
 <div class="container">
     <header class="profile-header">
         <img src="assets/profile.jpeg" alt="Profile" class="profile-img">
@@ -19,84 +30,96 @@
         </div>
     </header>
 
-    <div class="skills-grid">
-        <div class="skill-card">
-            <h3>🖥️ Infrastructure</h3>
-            <div class="tags">
-                <span class="tag">Server Admin & Networking</span>
-                <span class="tag">Enterprise Server Management</span>
-                <span class="tag">Technical Support</span>
-                <span class="tag">Remote Support</span>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <h3>💻 Development</h3>
-            <div class="tags">
-                <span class="tag">JavaScript</span>
-                <span class="tag">HTML/CSS</span>
-                <span class="tag">Python (Pandas)</span>
-                <span class="tag">Google Apps Script</span>
-            </div>
-        </div>
-
-        <div class="skill-card">
-            <h3>🛠️ Tools & Productivity</h3>
-            <div class="tags">
-                <span class="tag">Excel Pivot & Reporting</span>
-                <span class="tag">Technical Documentation</span>
-                <span class="tag">MS Office Suite</span>
-            </div>
-        </div>
-    </div>
-
-    <section class="projects-section">
-        <h2 class="section-title">Selected Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <span class="project-badge">Web Development</span>
-                <h3>Portal Alumni Modern</h3>
-                <p>Platform database alumni dengan fitur pencarian dan profil pengguna yang responsif.</p>
-                <a href="https://xirecentxz.github.io/web-alumni/" class="project-link">View Project →</a>
+    <section id="skills">
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>🖥️ Infrastructure</h3>
+                <div class="tags">
+                    <span class="tag">Server Admin & Networking</span>
+                    <span class="tag">Technical Support</span>
+                    <span class="tag">Remote Support</span>
+                </div>
             </div>
 
-            <div class="project-card">
-                <span class="project-badge">Data Visualization</span>
-                <h3>Modern Sales Dashboard</h3>
-                <p>Dashboard interaktif untuk memantau performa penjualan secara real-time.</p>
-                <a href="https://script.google.com/macros/s/AKfycbyGNbcBQ7ZxaUqq431jnZ6mN3LzjftcRF2kfNqHxKfr_O3mTM6B8BTaTYmPRFtAMMNJ/exec" class="project-link">View Project →</a>
+            <div class="skill-card">
+                <h3>💻 Development</h3>
+                <div class="tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">Python (Pandas)</span>
+                    <span class="tag">Google Apps Script</span>
+                </div>
             </div>
 
-            <div class="project-card">
-                <span class="project-badge">Google Apps Script</span>
-                <h3>Web-Based Product Catalog</h3>
-                <p>Katalog produk dinamis yang terintegrasi langsung dengan Google Sheets sebagai database.</p>
-                <a href="https://script.google.com/macros/s/AKfycbzLuWqoA5H2g7WVy212kL--5R_uo1cRqqoRsrHXKDuzERsYQohxL2BWLY-2BOTzwHhGVg/exec" class="project-link">View Project →</a>
-            </div>
-
-            <div class="project-card">
-                <span class="project-badge">JavaScript Game</span>
-                <h3>Roulette King's Game</h3>
-                <p>Game interaktif berbasis web menggunakan JavaScript untuk logika peruntungan dan animasi.</p>
-                <a href="https://xirecentxz.github.io/roulette-web-game/" class="project-link">View Project →</a>
-            </div>
-
-             <div class="project-card">
-                <span class="project-badge">JavaScript Game</span>
-                <h3>Plinko Master</h3>
-                <p>Game keberuntungan interaktif dengan sistem skor dinamis. Saat ini sedang dalam tahap pengembangan fitur dan penyesuaian visual.</p>
-                <a href="https://xirecentxz.github.io/plinko-web-game/" class="project-link">View Project →</a>
-            </div>
-
-            <div class="project-card">
-                <span class="project-badge">IT Support Tool</span>
-                <h3>Helpdesk Ticketing System</h3>
-                <p>Sistem pelaporan kendala IT berbasis web dengan integrasi Google Sheets sebagai database utama. (Development In Progress).</p>
-                <a href="https://xirecentxz.github.io/Helpdesk-Ticketing/" class="project-link">View Project →</a>
+            <div class="skill-card">
+                <h3>🛠️ Tools</h3>
+                <div class="tags">
+                    <span class="tag">Excel Pivot</span>
+                    <span class="tag">Technical Documentation</span>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="projects-section" id="projects">
+        <h2 class="section-title">Selected Projects</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card featured">
+                <div class="card-header">
+                    <span class="project-badge">IT Support Tool</span>
+                    <span class="status-badge status-ongoing">In Progress</span>
+                </div>
+                <h3>Helpdesk Ticketing System</h3>
+                <p>Sistem pelaporan kendala IT berbasis web dengan integrasi Google Sheets sebagai database utama.</p>
+                <a href="https://xirecentxz.github.io/helpdesk-ticketing/" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="card-header">
+                    <span class="project-badge">Automation</span>
+                    <span class="status-badge status-complete">Complete</span>
+                </div>
+                <h3>Contact Sanitizer</h3>
+                <p>Alat pembersih data kontak otomatis menggunakan JavaScript, lahir dari kebutuhan operasional riil.</p>
+                <a href="https://xirecentxz.github.io/contact-cleaner/" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="card-header">
+                    <span class="project-badge">JS Game</span>
+                    <span class="status-badge status-complete">Complete</span>
+                </div>
+                <h3>Roulette King's Game</h3>
+                <p>Game interaktif menggunakan JavaScript untuk logika peruntungan dan animasi.</p>
+                <a href="https://xirecentxz.github.io/roulette-web-game/" class="project-link">View Project →</a>
+            </div>
+
+            <div class="project-card">
+                <div class="card-header">
+                    <span class="project-badge">Archive</span>
+                    <span class="status-badge status-abandoned">Archived</span>
+                </div>
+                <h3>Portal Alumni</h3>
+                <p>Eksperimen awal database alumni. Proyek ini diarsipkan untuk fokus pada alat otomatisasi.</p>
+                <a href="https://xirecentxz.github.io/web-alumni/" class="project-link">View Project →</a>
+            </div>
+
+        </div>
+    </section>
 </div>
+
+<script>
+    // Smooth Scroll Script
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
 
 </body>
 </html>
