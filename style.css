@@ -170,3 +170,8 @@ body {
     .header-text h1 { font-size: 2rem; }
     .navbar { width: 85%; }
 }
+
+/* Memberikan jarak otomatis saat navigasi klik agar tidak tertutup navbar */
+section {
+    scroll-margin-top: 100px; /* Sesuaikan angka ini dengan tinggi navbar + jarak yang Anda mau */
+}
